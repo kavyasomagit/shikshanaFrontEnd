@@ -1,0 +1,16 @@
+.main{
+    padding: 11rem 2rem 2rem 2rem;
+}
+
+.filter{
+    padding: 11em 2rem 2rem 2rem;
+    width: 2000px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-right: 100px;
+    height: 1000px;
+}
+
+.home-container {
+    display: flex;
+}
