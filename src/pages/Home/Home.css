@@ -1,16 +1,24 @@
 .main{
+    /* padding: 11rem 2rem 2rem 2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between cards */
+    padding: 2rem;
+}
+
+.mainpage{
+    display: flex;
     padding: 11rem 2rem 2rem 2rem;
+    /* justify-content: space-between; */
 }
 
 .filter{
-    padding: 11em 2rem 2rem 2rem;
-    width: 2000px;
+    width: 300rem;
+    height: 1200px;
     border: 1px solid black;
-    margin-top: 100px;
-    margin-right: 100px;
-    height: 1000px;
-}
-
-.home-container {
-    display: flex;
+    margin-right: 1rem;
+    position: sticky;
+    top: 0; 
+    height: 100vh; 
+    overflow-y: auto; 
 }

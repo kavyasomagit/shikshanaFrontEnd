@@ -1,0 +1,12 @@
+.Singlefilter{
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+.Filter-heading{
+  position: sticky;
+  top: 0; 
+  height: 10vh; 
+  overflow-y: auto; 
+  background-color: var(--background-color);
+}

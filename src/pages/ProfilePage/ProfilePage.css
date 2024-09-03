@@ -1,0 +1,68 @@
+.profile-page {
+    /* padding: 20px; */
+    padding-top: 8rem;
+}
+.secondary-navbar {
+    background-color: #f8f9fa;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.secondary-navbar-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.secondary-navbar-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-navbar-item:hover,
+.secondary-navbar-item.active {
+    background-color: var(--primary-color);
+}
+
+.profile-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tab-content label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.tab-content input,
+.tab-content textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.tab-content textarea {
+    resize: vertical;
+    height: 100px;
+}
+.Updatebutton {
+    background-color: var(--primary-color);
+    width: 5%;
+    padding: 8px;
+    border-radius: 5px;
+}
