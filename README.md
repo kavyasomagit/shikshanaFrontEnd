@@ -1,4 +1,4 @@
-https://shikshana-front-end.vercel.app/
+Explore the app here: https://shikshana-front-end.vercel.app/
 
 # Getting Started with Create React App
 
