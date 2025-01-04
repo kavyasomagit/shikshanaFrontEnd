@@ -14,7 +14,7 @@ export const FilterBox = ({ onQueryParametersChange }) => {
     useEffect(() => {
         (async () => {
             try {
-                const {data} = await axios.get(`http://localhost:3500/api/filter/filterOptions`);
+                const {data} = await axios.get(`https://shikshana.vercel.app/api/filter/filterOptions`);
                 setfilterNames(data[0].filterName)
                 setfilterOption((data[0].filterOptions))
                 //console.log("aneesh",data[0].filterOptions)

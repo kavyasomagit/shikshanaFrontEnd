@@ -26,7 +26,7 @@ export const SingleProfilePage = () => {
     useEffect (() => {
         (async() => {
             try {
-                const {data} = await axios.get(`http://localhost:3500/api/SingleProfile/${id}`)
+                const {data} = await axios.get(`https://shikshana.vercel.app/api/SingleProfile/${id}`)
                 console.log(data)
                 SetsingleProfile(data)
             } catch (error) {

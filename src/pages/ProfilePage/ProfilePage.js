@@ -14,7 +14,7 @@ export const ProfilePage = () => {
         if (UserDetailsContext && UserDetailsContext.ContactMail) {
         (async () => {
             try {
-                const {data} = await axios.postt('http://localhost:3500/api/auth/find/faculty/details',  {
+                const {data} = await axios.postt('https://shikshana.vercel.app/api/auth/find/faculty/details',  {
                     ContactMail: UserDetailsContext.ContactMail
                 })
                 console.log(data);
@@ -60,7 +60,7 @@ export const ProfilePage = () => {
     const handleUpdate = async(e) => {
         e.preventDefault();
         try {
-            const response = await axios.patch('http://localhost:3500/api/auth/login/faculty',  {
+            const response = await axios.patch('https://shikshana.vercel.app/api/auth/login/faculty',  {
                 ContactMail: UserDetailsContext.ContactMail,
                 ...formData
             })

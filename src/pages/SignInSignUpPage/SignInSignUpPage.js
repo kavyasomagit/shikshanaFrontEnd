@@ -64,7 +64,7 @@ const Login = () => {
         e.preventDefault()
         if(userDetails.loginAs == 'student'){
             try {
-                const response = await axios.post(`http://localhost:3500/api/auth/login`,  {
+                const response = await axios.post(`https://shikshana.vercel.app/api/auth/login`,  {
                     ContactMail: userDetails.ContactMail,
                         password: userDetails.password
                     }
@@ -81,7 +81,7 @@ const Login = () => {
             } 
         }else{
             try {
-                const response = await axios.post(`http://localhost:3500/api/auth/login/faculty`,  {
+                const response = await axios.post(`https://shikshana.vercel.app/api/auth/login/faculty`,  {
                         ContactMail: userDetails.ContactMail,
                         password: userDetails.password
                     }
@@ -150,7 +150,7 @@ const SignUp = ({setActiveTab}) => {
         }else{
             if(formData.loginAs == 'student'){
                 try {
-                    const response = await axios.post('http://localhost:3500/api/auth/register', formData);
+                    const response = await axios.post('https://shikshana.vercel.app/api/auth/register', formData);
                     console.log(response);
                     setActiveTab('Login');
                 } catch (error) {
@@ -160,7 +160,7 @@ const SignUp = ({setActiveTab}) => {
             }
             else{
                 try {
-                    const response = await axios.post('http://localhost:3500/api/profiles/addProfile', {
+                    const response = await axios.post('https://shikshana.vercel.app/api/profiles/addProfile', {
                         "loginAs" : formData.loginAs,
                         "password": formData.password,
                         "Name": formData.Name,

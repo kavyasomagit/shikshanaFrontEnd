@@ -20,7 +20,7 @@ export const ProfileCard = ({profile}) => {
 
     const checkWishlistIconState = async () => {
         try {
-            const {data} = await axios.get('http://localhost:3500/api/wishList/check',{params:{
+            const {data} = await axios.get('https://shikshana.vercel.app/api/wishList/check',{params:{
                 "profileId": _id,
                 "email": UserDetailsContext.ContactMail
             }})
@@ -34,7 +34,7 @@ export const ProfileCard = ({profile}) => {
         setwishlistState(prevState => !prevState)
         if(!wishlistState){
             try {
-                const response = await axios.post('http://localhost:3500/api/wishList',{
+                const response = await axios.post('https://shikshana.vercel.app/api/wishList',{
                     "profileId": _id,
                     "email": UserDetailsContext.ContactMail
                 })
@@ -44,7 +44,7 @@ export const ProfileCard = ({profile}) => {
         }
         else{
             try {
-                const response = await axios.delete('http://localhost:3500/api/wishList',{params:{
+                const response = await axios.delete('https://shikshana.vercel.app/api/wishList',{params:{
                     "profileId": _id,
                     "email": UserDetailsContext.ContactMail
                 }})

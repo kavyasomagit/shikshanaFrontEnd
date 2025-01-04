@@ -39,7 +39,7 @@ export const Home = () => {
     useEffect(() => {
         (async () => {
             try {
-                const {data} = await axios.get(`http://localhost:3500/api/filter`, { params });
+                const {data} = await axios.get(`https://shikshana.vercel.app/api/filter`, { params });
                 setProfiles(data)
                 //console.log(profiles)
             } catch (error) {

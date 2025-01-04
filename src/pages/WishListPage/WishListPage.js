@@ -19,7 +19,7 @@ export const WishListPage = () => {
     useEffect( () => {
         (async () => {
             try {
-                const {data} = await axios.get('http://localhost:3500/api/wishList', {params: {
+                const {data} = await axios.get('https://shikshana.vercel.app/api/wishList', {params: {
                     "email":UserDetailsContext.ContactMail
                 }})
                 // console.log('wishhh',data);
